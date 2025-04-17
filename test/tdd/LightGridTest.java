@@ -37,4 +37,9 @@ class LightGridTest {
 		assertEquals(grid.countLightsOn(), 999996);
 	}
 
+	@Test
+	void test5() {
+		grid.toggle(0,0,0,999);
+		assertEquals(grid.countLightsOn(), 1000);
+	}
 }
