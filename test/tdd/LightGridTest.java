@@ -29,5 +29,12 @@ class LightGridTest {
 		grid.turnOn(0,0,999,999);
 		assertEquals(grid.countLightsOn(), 1000000);
 	}
+	
+	@Test
+	void test4() {
+		grid.turnOn(0,0,999,999);
+		grid.turnOff(499, 499, 500, 500);
+		assertEquals(grid.countLightsOn(), 999996);
+	}
 
 }
